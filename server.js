@@ -16,6 +16,7 @@ mongoose.connect(`mongodb+srv://benjamin_m:${process.env.DB_PASS}@cluster0.9xnz1
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(express.static('public'));
 
 routes(app);
 
